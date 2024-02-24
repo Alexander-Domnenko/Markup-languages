@@ -1,0 +1,171 @@
+function swap4() {
+	if (elem.checked)
+		(change.style.display = "block")
+	& (changearrow.style.background = "url('./image/main/arrowclose.svg') 100% 100% no-repeat")
+	& (changearrow.style.width = "29px")
+	& (changearrow.style.top = "min(7px, 22%)")
+	else
+		(change.style.display = "none")
+	& (changearrow.style.background = "url('./image/main/arrow.svg') 100% 100% no-repeat")
+	& (changearrow.style.width = "25px")
+	& (changearrow.style.top = "30%")
+}
+function swap6() {
+	if (elem2.checked)
+		(change2.style.display = "block")
+	& (changearrow2.style.background = "url('./image/main/arrowclose.svg') 100% 100% no-repeat")
+	& (changearrow2.style.width = "29px")
+	& (changearrow2.style.top = "min(7px, 22%)")
+	else
+		(change2.style.display = "none")
+	& (changearrow2.style.background = "url('./image/main/arrow.svg') 100% 100% no-repeat")
+	& (changearrow2.style.width = "25px")
+	& (changearrow2.style.top = "30%")
+}
+function swap5() {
+	if (elem.checked)
+		(elem.checked = false)
+	else
+		(elem.checked = true)
+	swap4()
+}
+function swap7() {
+	if (elem2.checked)
+		(elem2.checked = false)
+	else
+		(elem2.checked = true)
+	swap6()
+}
+var count = 0;
+var count2 = 0;
+var count3 = 0;
+var count4 = 0;
+var count5 = 0;
+var count6 = 0;
+var count7 = 0;
+var countelem = document.getElementById("countelem");
+var countelem2 = document.getElementById("countelem2");
+var countelem3 = document.getElementById("countelem3");
+var countelem4 = document.getElementById("countelem4");
+var countelem5 = document.getElementById("countelem5");
+var countelem6 = document.getElementById("countelem6");
+var countelem7 = document.getElementById("countelem7");
+var elem = document.getElementById("main-menutoggle");
+var elem2 = document.getElementById("main-menutoggle2");
+var mainplus = document.getElementById("main-plus");
+var mainminus = document.getElementById("main-minus");
+var mainplus2 = document.getElementById("main-plus2");
+var mainminus2 = document.getElementById("main-minus2");
+var mainplus3 = document.getElementById("main-plus3");
+var mainminus3 = document.getElementById("main-minus3");
+var mainplus4 = document.getElementById("main-plus4");
+var mainminus4 = document.getElementById("main-minus4");
+var mainplus5 = document.getElementById("main-plus5");
+var mainminus5 = document.getElementById("main-minus5");
+var mainplus6 = document.getElementById("main-plus6");
+var mainminus6 = document.getElementById("main-minus6");
+var mainplus7 = document.getElementById("main-plus7");
+var mainminus7 = document.getElementById("main-minus7");
+var changearrow = document.getElementById("main-select-task-arrow");
+var changearrow2 = document.getElementById("main-select-task-arrow2");
+var change = document.getElementById("main-taskmenu");
+var change2 = document.getElementById("main-taskmenu2");
+var back = document.getElementById("main-flex-additional-menu-close");
+elem.addEventListener("click",()=>{
+	swap4()
+})
+elem2.addEventListener("click",()=>{
+	swap6()
+})
+changearrow.onclick = function(){
+	swap5()
+}
+changearrow2.onclick = function(){
+	swap7()
+}
+mainplus.onclick = function(){
+	count++;
+	countelem.value = count;
+}
+mainminus.onclick = function(){
+	if (count > 0) {
+		count--;
+		countelem.value = count;
+	}
+}
+mainplus2.onclick = function(){
+	count2++;
+	countelem2.value = count2;
+}
+mainminus2.onclick = function(){
+	if (count2 > 0) {
+		count2--;
+		countelem2.value = count2;
+	}
+}
+mainplus3.onclick = function(){
+	count3++;
+	countelem3.value = count3;
+}
+mainminus3.onclick = function(){
+	if (count3 > 0) {
+		count3--;
+		countelem3.value = count3;
+	}
+}
+mainplus4.onclick = function(){
+	count4++;
+	countelem4.value = count4;
+}
+mainminus4.onclick = function(){
+	if (count4 > 0) {
+		count4--;
+		countelem4.value = count4;
+	}
+}
+mainplus5.onclick = function(){
+	count5++;
+	countelem5.value = count5;
+}
+mainminus5.onclick = function(){
+	if (count5 > 0) {
+		count5--;
+		countelem5.value = count5;
+	}
+}
+mainplus6.onclick = function(){
+	count6++;
+	countelem6.value = count6;
+}
+mainminus6.onclick = function(){
+	if (count6 > 0) {
+		count6--;
+		countelem6.value = count6;
+	}
+}
+mainplus7.onclick = function(){
+	count7++;
+	countelem7.value = count7;
+}
+mainminus7.onclick = function(){
+	if (count7 > 0) {
+		count7--;
+		countelem7.value = count7;
+	}
+}
+back.onclick = function(){
+	count = 0;
+	count2 = 0;
+	count3 = 0;
+	count4 = 0;
+	count5 = 0;
+	count6 = 0;
+	count7 = 0;
+	countelem.value = count;
+	countelem2.value = count2;
+	countelem3.value = count3;
+	countelem4.value = count4;
+	countelem5.value = count5;
+	countelem6.value = count6;
+	countelem7.value = count7;
+}

@@ -1,0 +1,260 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="keywords" content="Зефирка, Онлайн тренажер, Решение задач, Подготовка к ЕГЭ, Курсы Онлайн, Онлайн обучение, Онлайн школа, Образование, Научиться программировать">
+	<meta name="description" content="Решение задач прохождение курсов онлайн на Тренажер Зефирка">
+    <link href="../css/HeaderAndFooter.css" type="text/css" rel="stylesheet">
+	<link href="../css/StartSolve.css" type="text/css" rel="stylesheet">
+    <title>Тренажер Зефирка</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header-element-display" id="header-burger">
+				<input type="checkbox" id="header-menutoggle">
+				<label for="header-menutoggle" class="header-menubtn">
+				<span></span>
+				</label>
+				<div class="header-mainmenu">
+					<label> <a class="header-a" href="../Main.html"> <input class="header-rd_btn" type="radio" name="page"> <div class="header-phone-select-subject header-element-mainmenu">Выбор предмета</div> </label></a>
+					<label> <input class="header-rd_btn" type="radio" name="page" checked> <div class="header-phone-start-solve header-element-mainmenu">Начать решать!</div> </label>
+					<label> <input class="header-rd_btn" type="radio" name="page"> <div class="header-phone-reference-material header-element-mainmenu">Справочные материалы</div> </label>
+					<label> <a class="header-a" href="Sign.html"> <input class="header-rd_btn" type="radio" name="page"> <div class="header-phone-my-profile header-element-mainmenu">Мой профиль</div> </label></a>
+					<label> <input class="header-rd_btn" type="radio" name="page"> <div class="header-phone-messenger header-element-mainmenu">Мессенджер</div> </label>
+					<label> <input class="header-rd_btn" type="radio" name="page"> <div class="header-phone-forum header-element-mainmenu">Форум</div> </label>
+					<label> <input class="header-rd_btn" type="radio" name="page"> <div class="header-phone-news header-element-mainmenu">Новости сайта</div> </label>
+				</div>
+			</div>
+			<div class="header-element-display" id="header-logo"></div>
+			<div class="header-element-display" id="header-subject"></div>
+			<div id="header-name">
+				<img src="../image/header/logo.png" alt="Лого">
+			</div>
+			<div class="header-element-search">
+					<div class="header-search">
+						<input type="text" class="header-search-term" placeholder="Поиск...">
+						<button type="submit" class="header-search-button">
+							<img src="../image/header/loop.svg" alt="Лупа">
+						</button>
+					</div>
+			</div>
+			<div class="header-element-bell">
+				<input type="checkbox" id="header-belltoggle">
+				<label for="header-belltoggle" class="header-bellbtn">
+					<span></span>
+				</label>
+				<div class="header-bellmenu">
+					<span class="header-span-notification">Уведомления</span>
+					<div class="header-bell-container">
+						<div id="header-bell-notification-1" class="header-bell-notification">
+							<div class="header-bell-notification-profile"></div>
+							<span class="header-bell-notification-span">Новые курсы ждут Вашего визита! Заходите, не теряйте время!</span>
+							<div class="header-notification-close-div">
+								<input id="header-notification-close-1" class="header-notification-close" type="checkbox" name="close-notification">
+							</div>
+						</div>
+						<div id="header-bell-notification-2" class="header-bell-notification">
+							<div class="header-bell-notification-profile"></div>
+							<span class="header-bell-notification-span">Новые курсы ждут Вашего визита!</span>
+							<div class="header-notification-close-div">
+								<input id="header-notification-close-2" class="header-notification-close" type="checkbox" name="close-notification">
+							</div>
+						</div>
+						<div id="header-bell-notification-3" class="header-bell-notification">
+							<div class="header-bell-notification-profile"></div>
+							<span class="header-bell-notification-span">Заходите, не теряйте время!</span>
+							<div class="header-notification-close-div">
+								<input id="header-notification-close-3" class="header-notification-close" type="checkbox" name="close-notification">
+							</div>
+						</div>
+					</div>
+					<span class="header-span-notification" id="header-bell-notification-show-all">Показать все</span>
+				</div>
+			</div>
+			<div class="header-element-profile">
+				<div class="header-profile-menu">
+					<div class="header-profile-element"><a class="header-a" href="Sign.html">Мой профиль</a></div>
+					<div class="header-profile-element">Выход</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main-grid-menu">
+				<div class="element-grid-menu">
+					<a class="main-a" href="../Main.html"><span class="element-menu choice_subject">Выбор предмета</span></a>
+					<span class="element-menu start_decide">Начать решать</span>
+					<span class="element-menu reference_materials">Справочные материалы</span>
+					<a class="main-a" href="Sign.html"><span class="element-menu my_profile">Мой профиль</span></a>
+					<span class="element-menu messenger">Мессенджер</span>
+					<span class="element-menu forum">Форум</span>
+					<span class="element-menu news">Новости сайта</span>
+				</div>
+				<br>
+				<div class="element-grid-menu main-additional-menu">
+					<span id="main-flex-additional-menu-span">Все задания по</span>
+					<div class="main-flex-additional-menu-calc">
+						<input class="main-button" type="button" id="main-minus" value="-">
+						<input type="number" class="main-value-input" id="countelem" value="0">
+						<input class="main-button" type="button" id="main-plus" value="+">
+					</div>
+					<div class="main-flex-additional-menu">
+						<input type="button" id="main-flex-additional-menu-okey" value=" Составить вариант ">
+						<input type="button" id="main-flex-additional-menu-close" value=" X ">
+					</div>
+				</div>
+			</div>
+			<div class="main-grid-subject">
+				<div class="element-grid-subject">
+					<div class="main-select-task">
+						<div class="main-select-task-head">Математика</div>
+						<div class="main-select-task-select-section">
+							<div class="main-select-task-section">
+								<div class="main-select-task-section-first-line">				
+									<div class="main-select-task-number">1.</div>
+									<div id="main-burger">
+										<input type="checkbox" class="main-menutoggle" id="main-menutoggle">
+										<label for="main-menutoggle">
+											<span id="main-name-task">Производные</span>
+										</label>
+									</div>
+									<div class="main-select-task-container">
+										<input class="main-button" type="button" id="main-minus2" value="-">
+										<input type="number" class="main-value-input" id="countelem2" value="0">
+										<input class="main-button" type="button" id="main-plus2" value="+">
+									</div>
+									<div class="main-select-task-arrow" id="main-select-task-arrow"></div>
+								</div>
+								<div class="main-taskmenu" id="main-taskmenu">
+									<div class="main-task-container">
+										<div class="main-point"></div>
+										<div class="main-task-burger">
+											<input type="checkbox" id="main-tasktoggle" checked>
+												<label for="main-tasktoggle">
+													<span></span>
+												</label>
+										</div>
+										<div class="main-tasks-name">Производные первого порядка</div>
+										<div class="main-tasks-container">
+											<input class="main-button" type="button" id="main-minus3" value="-">
+											<input type="number" class="main-value-input" id="countelem3" value="0">
+											<input class="main-button" type="button" id="main-plus3" value="+">
+										</div>
+									</div>
+									<div class="main-task-container">
+										<div class="main-point"></div>
+										<div class="main-task-burger">
+											<input type="checkbox" id="main-tasktoggle" checked>
+												<label for="main-tasktoggle">
+													<span></span>
+												</label>
+										</div>
+										<div class="main-tasks-name">Производные второго порядка</div>
+										<div class="main-tasks-container">
+											<input class="main-button" type="button" id="main-minus4" value="-">
+											<input type="number" class="main-value-input" id="countelem4" value="0">
+											<input class="main-button" type="button" id="main-plus4" value="+">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-select-task-section">
+								<div class="main-select-task-section-first-line">				
+									<div class="main-select-task-number">2.</div>
+									<div id="main-burger">
+										<input type="checkbox" class="main-menutoggle" id="main-menutoggle2">
+										<label for="main-menutoggle2">
+											<span id="main-name-task">Интегралы</span>
+										</label>
+									</div>
+									<div class="main-select-task-container">
+										<input class="main-button" type="button" id="main-minus5" value="-">
+										<input type="number" class="main-value-input" id="countelem5" value="0">
+										<input class="main-button" type="button" id="main-plus5" value="+">
+									</div>
+									<div class="main-select-task-arrow" id="main-select-task-arrow2"></div>
+								</div>
+								<div class="main-taskmenu" id="main-taskmenu2">
+									<div class="main-task-container">
+										<div class="main-point"></div>
+										<div class="main-task-burger">
+											<input type="checkbox" id="main-tasktoggle" checked>
+												<label for="main-tasktoggle">
+													<span></span>
+												</label>
+										</div>
+										<div class="main-tasks-name">Интегралы первого рода</div>
+										<div class="main-tasks-container">
+											<input class="main-button" type="button" id="main-minus6" value="-">
+											<input type="number" class="main-value-input" id="countelem6" value="0">
+											<input class="main-button" type="button" id="main-plus6" value="+">
+										</div>
+									</div>
+									<div class="main-task-container">
+										<div class="main-point"></div>
+										<div class="main-task-burger">
+											<input type="checkbox" id="main-tasktoggle" checked>
+												<label for="main-tasktoggle">
+													<span></span>
+												</label>
+										</div>
+										<div class="main-tasks-name">Интегралы второго рода</div>
+										<div class="main-tasks-container">
+											<input class="main-button" type="button" id="main-minus7" value="-">
+											<input type="number" class="main-value-input" id="countelem7" value="0">
+											<input class="main-button" type="button" id="main-plus7" value="+">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-grid-marketing">
+				<div class="element-grid-marketing">
+					<div class="block-marketing">
+						<div class="opisanie_marketing">Нынешний хит продаж: PlayStation 5 на сайте PV-S!</div>
+						<div class="marketing-photo" id="marketing-photo-1"></div>
+					</div>
+					<div class="block-marketing">
+						<div class="opisanie_marketing">Доставка: бесплатно</div>
+						<div class="marketing-photo" id="marketing-photo-2"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-element-faq footer-element">
+				<strong id="footer-faq-text">FAQ</strong>
+				<div class="footer-faq">
+					<input type="button" id="footer-faq-button" value=" Популярные вопросы ">
+					<div class="footer-faq-question"></div>
+				</div>
+			</div>
+			<div class="footer-element-social-network footer-element">
+				<strong id="footer-social-network-text">Мы в соц. сетях</strong>
+				<div class="footer-social-network">
+					<div class="footer-social-network-vk"></div>
+					<div class="footer-social-network-youtube"></div>
+					<div class="footer-social-network-instagram"></div>
+				</div>
+			</div>
+			<div class="footer-element-support footer-element">
+				<strong id="footer-support-text">Тех. поддержка</strong>
+				<div class="footer-support">
+					<div class="footer-support-call"></div>
+					<strong id="footer-support-phone">+7904 145-17-17 <br> +7904 151-99-58</strong>
+				</div>
+			</div>
+			<div class="footer-element-license footer-element">
+				<strong id="footer-license-text">Лицензия</strong>
+				<input type="button" id="footer-license-button" value=" Доп. сведения ">
+				<div class="footer-license-img"></div>
+			</div>
+		</footer>
+	</div>
+	<script src="../js/header-bell-close-notification.js"></script>
+	<script src="../js/mainlist.js"></script>
+</body>
+</html>
