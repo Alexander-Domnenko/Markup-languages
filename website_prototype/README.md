@@ -1,8 +1,5 @@
-<h1 align="center">Website prototype</h1>
-
-
-
-## [DEMONSTRATION OF WEBSITE PROTOTYPE](https://gitlab.com/chfirchcoluna/electronic-portfolio/-/blob/main/1st_year_2nd_semester/graphic_design/website_prototype/prezentatsiya-domnenko-suslikov.pdf)
+# Website prototype
+## [Presentation website](https://github.com/Alexander-Domnenko/Markup-languages/blob/main/website_prototype/prezentatsiya-domnenko-suslikov.pdf)
 
 ![1](images/1.png "1")
 ![2](images/2.png "2")
